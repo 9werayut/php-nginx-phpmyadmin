@@ -16,6 +16,7 @@ services:
 
   php:
       image: php:7-fpm-alpine
+      build: ./php
       container_name: pepo_php
       volumes:
       - ./www:/var/www/html
